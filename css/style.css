@@ -1,0 +1,29 @@
+h3 {
+    color: purple;
+    font-size: 46px;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+ul {
+    color: blueviolet;
+    font-family: Verdana;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.fs-26{
+    font-size: 26px;
+}
+
+.fs-36{ 
+    font-size: 36px;
+}
+
+#bc-red{
+    background-color: red;
+}
