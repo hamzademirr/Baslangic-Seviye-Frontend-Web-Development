@@ -1,0 +1,128 @@
+<h1>HtML</h1>
+
+<h2>Linkler</h2>
+<!--
+    -farkli bir sayfaya gitme
+    -sayfa ici linkleme id ilen linkleme
+    -mail at
+    -telefon et
+    href=""
+-->
+<ul>
+    <li>
+        <a href="https://www.google.com" target="_blank">google a gider</a>
+    </li>
+    <li>
+        <a href="odev1.html">Odev sayfasi</a>
+    </li>
+    <li>
+        <a href="#alt">sayfa sonuna git</a>
+    </li>
+    <li>
+        <a href="mailto:falanca@gmail.com">mail gonder</a>
+    </li>
+    <li>
+        <a href="tel:+905556663344">telefon et</a>
+    </li>
+</ul>
+
+<a href="https://picsum.photos/200/300">
+    <img src="https://picsum.photos/200/300" alt="lorem">
+</a>
+
+<h2>Gorseller ilen calismak</h2>
+<!-- img -->
+<img src="https://picsum.photos/200/300" alt="lorem image" align="left">
+<img src="/image/lorem_image.jpg" alt="lorem image" title="lorem gorseller" border="3">
+
+
+
+<h2>Emmet / Zen Coding</h2>
+<!--
+    etiket isimleri girerek erise biliriz (h2 -> <h2></h2>)
+    + ek oge (h1+h2)<h1></h1> <h2></h2>
+    > icinde oge
+    ^ yukari cik ve oge olustur
+    * carp -> p*3
+    lorem (lorem metin)
+    . -> class
+    # -> id
+-->
+
+<h1>ek oge yontemi ilen yapildi</h1>
+<h2>ek oge yontemi ilen yapildi</h2>
+
+<!-- h1+p+h1+p+p+p == h1+p+h1+p*3 -->
+<h1></h1>
+<p></p>
+<h1></h1>
+<p></p>
+<p></p>
+<p></p>
+
+<!-- ul>li*4 -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!-- ul>li*4^p*2 -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<p></p>
+<p></p>
+
+<!-- ul>li*3>lorem3^^p*2>lorem2^h1>lorem1 -->
+<ul>
+    <li>Lorem, ipsum dolor.</li>
+    <li>Iusto, sit sequi.</li>
+    <li>Asperiores, sint facilis?</li>
+</ul>
+<p>Lorem, ipsum.</p>
+<p>Corrupti, facilis.</p>
+<h1>Lorem.</h1>
+
+<h2>Listeler</h2>
+<!--
+    sirali listeler -> 1, 2, 3 ordered list -> ol
+    sirali olmayan listeler -> *, *, * unordered list -> ul
+    -> List item -> li
+-->
+
+<ol>
+    <li>deneme 1</li>
+    <li>deneme 2</li>
+    <li>deneme 3</li>
+    <li>
+        deneme 4
+        <ul>
+            <li>deneme 1</li>
+            <li>deneme 2</li>
+            <li>deneme 3</li>
+        </ul>
+    </li>
+</ol>
+
+<ol type="I">
+    <li>deneme 1</li>
+    <li>deneme 2</li>
+    <li>deneme 3</li>
+</ol>
+
+<ul>
+    <li>deneme 1</li>
+    <li>deneme 2</li>
+    <li>deneme 3</li>
+</ul>
+
+<ul id="alt" style="list-style: square;">
+    <li>deneme 1</li>
+    <li>deneme 2</li>
+    <li>deneme 3</li>
+</ul>
