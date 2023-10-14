@@ -1,3 +1,56 @@
+/* css selectors */
+.color-blue.fw-bold{ /* color-blue ilen birlikte fw-bold ile birlikte kullanilmak zorundadir aksi durumda calismayacaktir*/
+    color: blue;
+    font-weight: bold;
+}
+
+.color-blue .fw-bold{ /* color-blue ile fw-bold un calisa bilmesi icin fw-boldun color-blue nun altinda bir konumda olmasi gerekmekte orn: ul.color-blue>li.fw-bold*/
+    color: blue;
+    font-weight: bold;
+}
+
+/* li:first-child{
+    color: green;
+}
+
+li:last-child{
+    color: turquoise;
+}
+
+ol>li:nth-child(3){
+    color: purple;
+} */
+
+li:nth-child(2n-1){
+    color: red;
+}
+
+.item1{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin: 5px 0;
+    /* flex: 0 0 300px; */
+}
+.item2{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    margin: 5px 0;
+    /* flex: 0 0 300px; */
+}
+
+.wraper{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    /* height: 600px; */
+    align-items: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    
+}
+
 h3 {
     color: purple;
     font-size: 46px;
