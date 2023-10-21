@@ -1,37 +1,240 @@
-.storyphoto {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.search-input{
+.search-input {
     text-align: center;
-    
+
 }
 
-.logo{
+.logo {
     margin-left: 192px;
 }
 
-.nav-size{
+.nav-size {
     height: 52px;
 }
 
-.padding{
+.padding {
     margin: 0px 0px 0px 48px;
 }
 
-.story-name{
+.story-name {
     text-align: center;
     color: #000;
 }
 
-.post-user-font{
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.post-user-font {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     color: black;
 }
 
 .fas {
     float: right;
+}
+
+.storyphoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgb(238, 39, 82);
+    margin-right: .5px;
+}
+
+.storytext {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+.cart {
+    margin: 20px 20px 0px 20px;
+}
+
+.post-photo {
+    display: flex;
+}
+
+.stories{
+    margin-left: -5px;
+}
+
+.stories a {
+    text-align: center;
+}
+
+.post-header img {
+    width: 35px;
+    height: auto;
+}
+
+.post-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-right: .5rem;
+}
+
+.post-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.post-body ul {
+    list-style: none;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.post-body li {
+    margin-right: 20px;
+}
+
+.post-body li:last-child {
+    margin-left: auto;
+}
+
+.icons {
+    font-size: 23px;
+    margin-left: 5px;
+    position: relative;
+}
+
+.sidebar {
+    align-self: flex-start;
+    margin-top: 0.25px;
+    margin-left: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.sidebar-header a {
+    margin-left: -15px;
+}
+
+.sidebar-name {
+    color: #000;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.sidebar-info-text {
+    margin-top: 10px;
+}
+
+.sidebar-info-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+
+.sidebar-info-text strong {
+    font-size: 12px;
+    color: black;
+}
+
+.sidebar-body {
+    margin-top: -9px;
+    margin-left: 0.5rem;
+}
+
+.sidebar-accont {
+    margin-bottom: 17px;
+}
+
+.sidebar-footer-info {
+    margin-top: -13px;
+    font-size: 11px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: lightgrey;
+}
+
+.sidebar-footer-info :last-child{
+    font-size: 12px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.comment {
+    margin-top: -14px;
+    margin-left: -4px;
+}
+
+.comment img {
+    width: 23px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: .25rem;
+}
+
+.all-comment {
+    margin-left: -24px;
+    margin-bottom: -37px;
+    margin-top: -15px;
+}
+
+
+.comit {
+    margin-right: 1px;
+}
+
+.edit {
+    margin-top: -15px;
+}
+
+.last-edit {
+    margin-top: -16px;
+}
+
+.post-user-font {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.info {
+    color: rgb(139, 133, 133);
+    margin-top: -15px;
+}
+
+.info-date {
+    font-size: 12px;
+    color: rgb(139, 133, 133);
+    margin-top: -10px;
+}
+
+.card-footer {
+    background-color: white;
+}
+
+.card-footer :first-child {
+    margin-left: -4px;
+    font-size: 14px;
+    color: rgb(139, 133, 133);
+}
+
+.card-footer :last-child {
+    color: #0095f6;
+    opacity: 70%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    float: right;
+    margin-top: 2px;
+}
+
+.post {
+    margin-top: 2px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.form-control {
+    background-color: #FAFAFA;
+    font-size: 14px;
+}
+
+.bodyy {
+    margin-top: 10px;
 }
