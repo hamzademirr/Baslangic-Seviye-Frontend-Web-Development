@@ -1,0 +1,52 @@
+img {
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+html {
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+article {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+figure {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 1em;
+    font-size: 16px;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.gray {
+    color: gray;
+}
+
+.ff-sans {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    line-height: normal;
+}
+
+blockquote{
+    line-height: normal;
+}
