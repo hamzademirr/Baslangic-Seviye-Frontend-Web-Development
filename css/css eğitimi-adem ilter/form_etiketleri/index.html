@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <input type="hidden" value="Lorem." name="test">
+        <div class="form-item">
+            <label for="name">Ad</label>
+            <input name="name" id="name" type="text" required placeholder="Hamza D.">
+        </div>
+        <div class="form-item">
+            <label for="tel">Telefon</label>
+            <input name="tel" id="tel" type="tel" required placeholder="(_ _ _)  _ _ _  _ _  _ _">
+        </div>
+        <div class="form-item">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" required placeholder="email@email.com">
+        </div>
+        <div class="form-item">
+            <label for="mesaj">Mesaj</label>
+            <textarea name="mesaj" id="mesaj" rows="3"></textarea>
+        </div>
+        <div class="form-item">
+            <label for="city">Şehir</label>
+            <select name="city" id="city">
+                <option value="İstanbul">İstanbul</option>
+                <option value="Giresun">Giresun</option>
+                <option value="Ordu">Ordu</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <p>Sevdiğiniz renk</p>
+            <div class="radio-container">
+                <label><input type="radio" name="color" value="Green">Yeşil</label>
+                <label><input type="radio" name="color" value="Red">Kırmızı</label>
+                <label><input type="radio" name="color" value="blue">Mavi</label>
+            </div>
+        </div>
+        <div class="form-item">
+            <button type="reset">Sıfırla</button>
+            <button type="submit">Gönder</button>
+        </div>
+    </form>
+</body>
+
+</html>
