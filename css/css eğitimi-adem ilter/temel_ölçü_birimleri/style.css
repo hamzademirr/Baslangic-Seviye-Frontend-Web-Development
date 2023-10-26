@@ -1,0 +1,38 @@
+/* 
+    Temel Olculer
+
+    px
+
+    em == font-size
+    rem == root em
+    % == kapsayicinin olculerine gore kendini ayarlar
+    (view port)
+    vh
+    vw
+    vmin
+    vmax
+*/
+
+html{
+    font-size: 20px;
+}
+
+.container{
+    font-size: 12px;
+}
+
+.container p:nth-child(2){
+    font-size: 1em; /* kapsayicisina bakar */
+}
+
+.container p:nth-child(3){
+    font-size: 2rem; /* en ust bilgiyi kontrol eder */
+}
+
+.box{
+    font-size: 15px;
+    background-color: red;
+    width: 2em;
+    height: 2em;
+    border: 1em solid;
+}
