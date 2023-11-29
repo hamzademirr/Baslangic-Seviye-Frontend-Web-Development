@@ -1,4 +1,4 @@
-let counter = 0
+let counter = localStorage.getItem('counter') ? Number(localStorage.getItem('counter')) : 0
 let counterDom = document.querySelector('#counter')
 let increaseDom = document.querySelector('#increase')
 let decreaseDom = document.querySelector('#decrease')
@@ -11,5 +11,6 @@ decreaseDom.addEventListener("click", clickEvent)
 function clickEvent(){
     console.log(this.id)
     this.id == "decrease" ? counter -= 1 : counter += 1
+    localStorage.setItem('counter', counter)
     counterDom.innerHTML = counter
 }
