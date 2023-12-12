@@ -1,0 +1,64 @@
+.header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.header img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.input {
+  display: flex;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.input input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#list-collection {
+  padding: 0;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+}
+
+#list li {
+  background: #eee;
+  font-size: 18px;
+  padding: 12px 8px 12px 40px;
+}
+
+#list li:nth-child(even) {
+  background: #f9f9f9;
+}
+
+#list li:hover {
+  background: #ddd;
+}
+
+.close {
+  float: right;
+  line-height: 0.5;
+  padding: 12px;
+}
+
+.close:hover {
+  background: turquoise;
+}
+
+.completed{
+  text-decoration: line-through;
+}
