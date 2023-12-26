@@ -14,7 +14,7 @@ function user({name, surname, age, friends, isLoggedIn, address}){ //props
             <br />
 
             {friends.map((friends, index) => (
-                <div key = {index}>
+                <div key={index}>
                     {friends}
                 </div>
             ))}

@@ -30,12 +30,12 @@ function App() {
       <h3>Probs bölümü</h3>
 
       <User 
-        name = "Ali" 
-        surname = "Bal" 
-        // isLoggedIn = {true} 
-        age = "42"
-        friends = {["Ahmet", "Mehmet", "Ali", "Ayse"]}
-        address = {{
+        name="Ali" 
+        surname="Bal" 
+        // isLoggedIn={true} 
+        age="42"
+        friends={["Ahmet", "Mehmet", "Ali", "Ayse"]}
+        address={{
           title: "Giresun/Merkez",
           zip: 28000
         }}
