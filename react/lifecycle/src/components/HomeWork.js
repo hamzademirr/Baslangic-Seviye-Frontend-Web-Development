@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useDebounce } from '@uidotdev/usehooks';
 
+
+// import { useDebounce } from '@uidotdev/usehooks'; çağırmadan kullanmak için
 // function useDebounce(text, delay) {
 //     const [value, setValue] = useState('');
 
@@ -23,43 +25,31 @@ function HomeWork() {
     const [isWrite, setIsWrite] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const [isRender, setIsRender] = useState(true);
-
-    // useDebounce(() => {
-    //     if (form.name && form.email && form.password !== "") {
-    //         console.log("Yazim durdu")
-    //         setIsWrite(() => true);
-    //         setIsVisible(() => true);
-
-    //         const interval = setInterval(() => {
-    //             setIsVisible(() => false);
-    //             setIsWrite(() => false);
-    //             clearInterval(interval);
-    //         }, 3000);
-    //     }
-    // }, 3000)
+    const [lastForm, setLastForm] = useState({});
 
 
-
-    // useEffect(() => {
-    //     console.log("yaziliyor")
-    // }, [form.name, form.email, form.password, useDebounce(3000)]);
-
-
-    const debouncedForm = useDebounce(form, 3000);
+    const debouncedForm = useDebounce(form, 1000);
     useEffect(() => {
-        if(isRender){
+        if (isRender) {
             return setIsRender(false);
         }
-        console.log("Yazim Durdu: ", debouncedForm);
-        console.log("Yazim durdu")
-        setIsWrite(() => true);
-        setIsVisible(() => true);
+        if (JSON.stringify(debouncedForm) !== JSON.stringify(lastForm)) {
+            console.log(debouncedForm);
+            console.log(lastForm);
+            console.log(JSON.stringify(debouncedForm));
+            console.log(JSON.stringify(lastForm));
+            console.log("Yazim Durdu: ");
+            console.log("Yazim durdu")
+            setIsWrite(() => true);
+            setIsVisible(() => true);
 
-        const interval = setInterval(() => {
-            setIsVisible(() => false);
-            setIsWrite(() => false);
-            clearInterval(interval);
-        }, 3000);
+            setTimeout(() => {
+                setIsVisible(() => false);
+                setIsWrite(() => false);
+            }, 1000);
+
+            setLastForm(JSON.parse(JSON.stringify(debouncedForm)));
+        }
 
     }, [debouncedForm]);
 
