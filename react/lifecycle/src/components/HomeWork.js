@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useDebounce } from '@uidotdev/usehooks';
 
-
 // import { useDebounce } from '@uidotdev/usehooks'; çağırmadan kullanmak için
 // function useDebounce(text, delay) {
 //     const [value, setValue] = useState('');
