@@ -8,11 +8,13 @@ function User() {
     useEffect(() => {
         axios(`https://jsonplaceholder.typicode.com/users/${id}`)
         .then((res) => setUser(res.data));
-    }, []);
+    }, [id]);
     return (
         <div>
             <h2>User</h2>
             name: {user.name}
+            <br />
+            email: {user.email}
             <br />
             id: {id}
         </div>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -8,8 +8,8 @@ function Users() {
 
     useEffect(() => {
         axios("https://jsonplaceholder.typicode.com/users")
-        .then((res)=> setUsers(res.data))
-        .finally(() => setLoading(false));
+            .then((res) => setUsers(res.data))
+            .finally(() => setLoading(false));
     }, [])
     return (
         <div>
@@ -18,10 +18,11 @@ function Users() {
             <ul>
                 {users.map((user) => (
                     <li key={user.id}>
-                        <Link to={`/user/${user.id}`}>{user.name}</Link>
+                        <Link to={`user/${user.id}`}>{user.name}</Link>
                     </li>
                 ))}
             </ul>
+            <Outlet />
         </div>
     );
 }
